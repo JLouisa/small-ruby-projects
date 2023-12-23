@@ -1,6 +1,3 @@
-# character.ord // number ascii
-# number.chr    // letter ascii
-
 def upcased_Cipher(num)
     new_num = num
 
@@ -36,10 +33,13 @@ def ceasar_cipher(word, shift)
             downcased_Cipher(new_word_D)
         end
     end
-    puts the_new_word.join
+    return the_new_word.join
 end
 
-ceasar_cipher("fhes", 1)
-ceasar_cipher("egdr", 2)
-ceasar_cipher("abcd", 5)
-ceasar_cipher("abcd", 9)
+puts "Please enter the word"
+given_word = gets.chomp
+puts "Please enter the shift number for encryption"
+given_shift = gets.chomp.to_i
+cc = ceasar_cipher(given_word, given_shift)
+puts "The encrypted word is:"
+puts cc
