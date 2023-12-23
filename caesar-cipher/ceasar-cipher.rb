@@ -41,3 +41,5 @@ end
 
 ceasar_cipher("fhes", 1)
 ceasar_cipher("egdr", 2)
+ceasar_cipher("abcd", 5)
+ceasar_cipher("abcd", 9)
