@@ -126,7 +126,6 @@ def game_flow(player, valid = 0)
     return
   end
 
-
   if $game_turn == 0
      $game_turn = 1
   else
